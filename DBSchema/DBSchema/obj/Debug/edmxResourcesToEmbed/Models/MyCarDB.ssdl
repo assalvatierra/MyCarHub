@@ -1,4 +1,650 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl" Namespace="MyCarDB.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005">
-  <EntityContainer Name="MyCarDBTargetContainer" />
+<Schema Namespace="MyCarDB.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MyCarDBStoreContainer">
+    <EntitySet Name="MyCars" EntityType="MyCarDB.Store.MyCars" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyCarModels" EntityType="MyCarDB.Store.MyCarModels" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyCarMakes" EntityType="MyCarDB.Store.MyCarMakes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyCarTypes" EntityType="MyCarDB.Store.MyCarTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyCarFuels" EntityType="MyCarDB.Store.MyCarFuels" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyCarTransmissions" EntityType="MyCarDB.Store.MyCarTransmissions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyCarDrivetrains" EntityType="MyCarDB.Store.MyCarDrivetrains" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyGarages" EntityType="MyCarDB.Store.MyGarages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyDrivers" EntityType="MyCarDB.Store.MyDrivers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyCarTrxes" EntityType="MyCarDB.Store.MyCarTrxes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyCarTrxGarages" EntityType="MyCarDB.Store.MyCarTrxGarages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyCarTrxDrivers" EntityType="MyCarDB.Store.MyCarTrxDrivers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyCarTrxFuels" EntityType="MyCarDB.Store.MyCarTrxFuels" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyCarTrxServices" EntityType="MyCarDB.Store.MyCarTrxServices" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyCarServiceTypes" EntityType="MyCarDB.Store.MyCarServiceTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyCarTrxExpenses" EntityType="MyCarDB.Store.MyCarTrxExpenses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyCarExpenseTypes" EntityType="MyCarDB.Store.MyCarExpenseTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyCarReminders" EntityType="MyCarDB.Store.MyCarReminders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyReminderTypes" EntityType="MyCarDB.Store.MyReminderTypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyAccounts" EntityType="MyCarDB.Store.MyAccounts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MySupportLogins" EntityType="MyCarDB.Store.MySupportLogins" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyGarageLogins" EntityType="MyCarDB.Store.MyGarageLogins" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MyDriverLogins" EntityType="MyCarDB.Store.MyDriverLogins" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="MyCarMakeMyCarModel" Association="MyCarDB.Store.MyCarMakeMyCarModel">
+      <End Role="MyCarMake" EntitySet="MyCarMakes" />
+      <End Role="MyCarModel" EntitySet="MyCarModels" />
+    </AssociationSet>
+    <AssociationSet Name="MyCarTypeMyCarModel" Association="MyCarDB.Store.MyCarTypeMyCarModel">
+      <End Role="MyCarType" EntitySet="MyCarTypes" />
+      <End Role="MyCarModel" EntitySet="MyCarModels" />
+    </AssociationSet>
+    <AssociationSet Name="MyCarModelMyCar" Association="MyCarDB.Store.MyCarModelMyCar">
+      <End Role="MyCarModel" EntitySet="MyCarModels" />
+      <End Role="MyCar" EntitySet="MyCars" />
+    </AssociationSet>
+    <AssociationSet Name="MyCarFuelMyCar" Association="MyCarDB.Store.MyCarFuelMyCar">
+      <End Role="MyCarFuel" EntitySet="MyCarFuels" />
+      <End Role="MyCar" EntitySet="MyCars" />
+    </AssociationSet>
+    <AssociationSet Name="MyCarTransmissionMyCar" Association="MyCarDB.Store.MyCarTransmissionMyCar">
+      <End Role="MyCarTransmission" EntitySet="MyCarTransmissions" />
+      <End Role="MyCar" EntitySet="MyCars" />
+    </AssociationSet>
+    <AssociationSet Name="MyCarDrivetrainMyCar" Association="MyCarDB.Store.MyCarDrivetrainMyCar">
+      <End Role="MyCarDrivetrain" EntitySet="MyCarDrivetrains" />
+      <End Role="MyCar" EntitySet="MyCars" />
+    </AssociationSet>
+    <AssociationSet Name="MyCarMyCarTrx" Association="MyCarDB.Store.MyCarMyCarTrx">
+      <End Role="MyCar" EntitySet="MyCars" />
+      <End Role="MyCarTrx" EntitySet="MyCarTrxes" />
+    </AssociationSet>
+    <AssociationSet Name="MyCarTrxMyCarGarageTrx" Association="MyCarDB.Store.MyCarTrxMyCarGarageTrx">
+      <End Role="MyCarTrx" EntitySet="MyCarTrxes" />
+      <End Role="MyCarGarageTrx" EntitySet="MyCarTrxGarages" />
+    </AssociationSet>
+    <AssociationSet Name="MyGarageMyCarGarageTrx" Association="MyCarDB.Store.MyGarageMyCarGarageTrx">
+      <End Role="MyGarage" EntitySet="MyGarages" />
+      <End Role="MyCarGarageTrx" EntitySet="MyCarTrxGarages" />
+    </AssociationSet>
+    <AssociationSet Name="MyCarTrxMyCarTrxDriver" Association="MyCarDB.Store.MyCarTrxMyCarTrxDriver">
+      <End Role="MyCarTrx" EntitySet="MyCarTrxes" />
+      <End Role="MyCarTrxDriver" EntitySet="MyCarTrxDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="MyDriverMyCarTrxDriver" Association="MyCarDB.Store.MyDriverMyCarTrxDriver">
+      <End Role="MyDriver" EntitySet="MyDrivers" />
+      <End Role="MyCarTrxDriver" EntitySet="MyCarTrxDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="MyCarTrxMyCarTrxFuel" Association="MyCarDB.Store.MyCarTrxMyCarTrxFuel">
+      <End Role="MyCarTrx" EntitySet="MyCarTrxes" />
+      <End Role="MyCarTrxFuel" EntitySet="MyCarTrxFuels" />
+    </AssociationSet>
+    <AssociationSet Name="MyCarTrxMyCarService" Association="MyCarDB.Store.MyCarTrxMyCarService">
+      <End Role="MyCarTrx" EntitySet="MyCarTrxes" />
+      <End Role="MyCarService" EntitySet="MyCarTrxServices" />
+    </AssociationSet>
+    <AssociationSet Name="MyCarServiceTypeMyCarTrxService" Association="MyCarDB.Store.MyCarServiceTypeMyCarTrxService">
+      <End Role="MyCarServiceType" EntitySet="MyCarServiceTypes" />
+      <End Role="MyCarTrxService" EntitySet="MyCarTrxServices" />
+    </AssociationSet>
+    <AssociationSet Name="MyCarTrxMyCarTrxExpense" Association="MyCarDB.Store.MyCarTrxMyCarTrxExpense">
+      <End Role="MyCarTrx" EntitySet="MyCarTrxes" />
+      <End Role="MyCarTrxExpense" EntitySet="MyCarTrxExpenses" />
+    </AssociationSet>
+    <AssociationSet Name="MyCarExpenseTypeMyCarTrxExpense" Association="MyCarDB.Store.MyCarExpenseTypeMyCarTrxExpense">
+      <End Role="MyCarExpenseType" EntitySet="MyCarExpenseTypes" />
+      <End Role="MyCarTrxExpense" EntitySet="MyCarTrxExpenses" />
+    </AssociationSet>
+    <AssociationSet Name="MyCarMyCarReminder" Association="MyCarDB.Store.MyCarMyCarReminder">
+      <End Role="MyCar" EntitySet="MyCars" />
+      <End Role="MyCarReminder" EntitySet="MyCarReminders" />
+    </AssociationSet>
+    <AssociationSet Name="MyReminderTypeMyCarReminder" Association="MyCarDB.Store.MyReminderTypeMyCarReminder">
+      <End Role="MyReminderType" EntitySet="MyReminderTypes" />
+      <End Role="MyCarReminder" EntitySet="MyCarReminders" />
+    </AssociationSet>
+    <AssociationSet Name="MyAccountMySupportLogin" Association="MyCarDB.Store.MyAccountMySupportLogin">
+      <End Role="MyAccount" EntitySet="MyAccounts" />
+      <End Role="MySupportLogin" EntitySet="MySupportLogins" />
+    </AssociationSet>
+    <AssociationSet Name="MyAccountMyCar" Association="MyCarDB.Store.MyAccountMyCar">
+      <End Role="MyAccount" EntitySet="MyAccounts" />
+      <End Role="MyCar" EntitySet="MyCars" />
+    </AssociationSet>
+    <AssociationSet Name="MyGarageMyGarageAdmin" Association="MyCarDB.Store.MyGarageMyGarageAdmin">
+      <End Role="MyGarage" EntitySet="MyGarages" />
+      <End Role="MyGarageAdmin" EntitySet="MyGarageLogins" />
+    </AssociationSet>
+    <AssociationSet Name="MySupportLoginMyGarageLogin" Association="MyCarDB.Store.MySupportLoginMyGarageLogin">
+      <End Role="MySupportLogin" EntitySet="MySupportLogins" />
+      <End Role="MyGarageLogin" EntitySet="MyGarageLogins" />
+    </AssociationSet>
+    <AssociationSet Name="MyDriverMyDriverLogin" Association="MyCarDB.Store.MyDriverMyDriverLogin">
+      <End Role="MyDriver" EntitySet="MyDrivers" />
+      <End Role="MyDriverLogin" EntitySet="MyDriverLogins" />
+    </AssociationSet>
+    <AssociationSet Name="MySupportLoginMyDriverLogin" Association="MyCarDB.Store.MySupportLoginMyDriverLogin">
+      <End Role="MySupportLogin" EntitySet="MySupportLogins" />
+      <End Role="MyDriverLogin" EntitySet="MyDriverLogins" />
+    </AssociationSet>
+    <AssociationSet Name="MyAccountMyDriver" Association="MyCarDB.Store.MyAccountMyDriver">
+      <End Role="MyAccount" EntitySet="MyAccounts" />
+      <End Role="MyDriver" EntitySet="MyDrivers" />
+    </AssociationSet>
+    <AssociationSet Name="MyAccountMyGarage" Association="MyCarDB.Store.MyAccountMyGarage">
+      <End Role="MyAccount" EntitySet="MyAccounts" />
+      <End Role="MyGarage" EntitySet="MyGarages" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="MyCars">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Year" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Variant" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MyCarModelId" Type="int" Nullable="false" />
+    <Property Name="MyCarFuelId" Type="int" Nullable="false" />
+    <Property Name="MyCarTransmissionId" Type="int" Nullable="false" />
+    <Property Name="MyCarDrivetrainId" Type="int" Nullable="false" />
+    <Property Name="PlateNo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Conduction" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Vin" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MyAccountId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyCarModels">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Model" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MyCarMakeId" Type="int" Nullable="false" />
+    <Property Name="MyCarTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyCarMakes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Make" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyCarTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyCarFuels">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fuel" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyCarTransmissions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Transmission" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyCarDrivetrains">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Drivetrain" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyGarages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Location" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MyAccountId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyDrivers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LicNo" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MyAccountId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyCarTrxes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MyCarTrxTypeId" Type="int" Nullable="false" />
+    <Property Name="MyCarId" Type="int" Nullable="false" />
+    <Property Name="TrxDate" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TrxTime" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TrxMileage" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="EnteredBy" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyCarTrxGarages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MyCarTrxId" Type="int" Nullable="false" />
+    <Property Name="MyGarageId" Type="int" Nullable="false" />
+    <Property Name="InFlag" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyCarTrxDrivers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MyCarTrxId" Type="int" Nullable="false" />
+    <Property Name="MyDriverId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyCarTrxFuels">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Value" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MyCarTrxId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyCarTrxServices">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Amount" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MyCarTrxId" Type="int" Nullable="false" />
+    <Property Name="MyCarServiceTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyCarServiceTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyCarTrxExpenses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Amount" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MyCarTrxId" Type="int" Nullable="false" />
+    <Property Name="MyCarExpenseTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyCarExpenseTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyCarReminders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MyCarId" Type="int" Nullable="false" />
+    <Property Name="DtEntered" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Message" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DtRemind" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Status" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MyReminderTypeId" Type="int" Nullable="false" />
+    <Property Name="SendNotification" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyReminderTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Type" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyAccounts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LoginId" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MySupportLogins">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MyAccountId" Type="int" Nullable="false" />
+    <Property Name="LoginId" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Remarks" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyGarageLogins">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MyGarageId" Type="int" Nullable="false" />
+    <Property Name="MySupportLoginId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MyDriverLogins">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MyDriverId" Type="int" Nullable="false" />
+    <Property Name="MySupportLoginId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="MyCarMakeMyCarModel">
+    <End Role="MyCarMake" Type="MyCarDB.Store.MyCarMakes" Multiplicity="1" />
+    <End Role="MyCarModel" Type="MyCarDB.Store.MyCarModels" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyCarMake">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCarModel">
+        <PropertyRef Name="MyCarMakeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyCarTypeMyCarModel">
+    <End Role="MyCarType" Type="MyCarDB.Store.MyCarTypes" Multiplicity="1" />
+    <End Role="MyCarModel" Type="MyCarDB.Store.MyCarModels" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyCarType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCarModel">
+        <PropertyRef Name="MyCarTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyCarModelMyCar">
+    <End Role="MyCarModel" Type="MyCarDB.Store.MyCarModels" Multiplicity="1" />
+    <End Role="MyCar" Type="MyCarDB.Store.MyCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyCarModel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCar">
+        <PropertyRef Name="MyCarModelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyCarFuelMyCar">
+    <End Role="MyCarFuel" Type="MyCarDB.Store.MyCarFuels" Multiplicity="1" />
+    <End Role="MyCar" Type="MyCarDB.Store.MyCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyCarFuel">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCar">
+        <PropertyRef Name="MyCarFuelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyCarTransmissionMyCar">
+    <End Role="MyCarTransmission" Type="MyCarDB.Store.MyCarTransmissions" Multiplicity="1" />
+    <End Role="MyCar" Type="MyCarDB.Store.MyCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyCarTransmission">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCar">
+        <PropertyRef Name="MyCarTransmissionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyCarDrivetrainMyCar">
+    <End Role="MyCarDrivetrain" Type="MyCarDB.Store.MyCarDrivetrains" Multiplicity="1" />
+    <End Role="MyCar" Type="MyCarDB.Store.MyCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyCarDrivetrain">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCar">
+        <PropertyRef Name="MyCarDrivetrainId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyCarMyCarTrx">
+    <End Role="MyCar" Type="MyCarDB.Store.MyCars" Multiplicity="1" />
+    <End Role="MyCarTrx" Type="MyCarDB.Store.MyCarTrxes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyCar">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCarTrx">
+        <PropertyRef Name="MyCarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyCarTrxMyCarGarageTrx">
+    <End Role="MyCarTrx" Type="MyCarDB.Store.MyCarTrxes" Multiplicity="1" />
+    <End Role="MyCarGarageTrx" Type="MyCarDB.Store.MyCarTrxGarages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyCarTrx">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCarGarageTrx">
+        <PropertyRef Name="MyCarTrxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyGarageMyCarGarageTrx">
+    <End Role="MyGarage" Type="MyCarDB.Store.MyGarages" Multiplicity="1" />
+    <End Role="MyCarGarageTrx" Type="MyCarDB.Store.MyCarTrxGarages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyGarage">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCarGarageTrx">
+        <PropertyRef Name="MyGarageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyCarTrxMyCarTrxDriver">
+    <End Role="MyCarTrx" Type="MyCarDB.Store.MyCarTrxes" Multiplicity="1" />
+    <End Role="MyCarTrxDriver" Type="MyCarDB.Store.MyCarTrxDrivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyCarTrx">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCarTrxDriver">
+        <PropertyRef Name="MyCarTrxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyDriverMyCarTrxDriver">
+    <End Role="MyDriver" Type="MyCarDB.Store.MyDrivers" Multiplicity="1" />
+    <End Role="MyCarTrxDriver" Type="MyCarDB.Store.MyCarTrxDrivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyDriver">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCarTrxDriver">
+        <PropertyRef Name="MyDriverId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyCarTrxMyCarTrxFuel">
+    <End Role="MyCarTrx" Type="MyCarDB.Store.MyCarTrxes" Multiplicity="1" />
+    <End Role="MyCarTrxFuel" Type="MyCarDB.Store.MyCarTrxFuels" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyCarTrx">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCarTrxFuel">
+        <PropertyRef Name="MyCarTrxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyCarTrxMyCarService">
+    <End Role="MyCarTrx" Type="MyCarDB.Store.MyCarTrxes" Multiplicity="1" />
+    <End Role="MyCarService" Type="MyCarDB.Store.MyCarTrxServices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyCarTrx">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCarService">
+        <PropertyRef Name="MyCarTrxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyCarServiceTypeMyCarTrxService">
+    <End Role="MyCarServiceType" Type="MyCarDB.Store.MyCarServiceTypes" Multiplicity="1" />
+    <End Role="MyCarTrxService" Type="MyCarDB.Store.MyCarTrxServices" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyCarServiceType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCarTrxService">
+        <PropertyRef Name="MyCarServiceTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyCarTrxMyCarTrxExpense">
+    <End Role="MyCarTrx" Type="MyCarDB.Store.MyCarTrxes" Multiplicity="1" />
+    <End Role="MyCarTrxExpense" Type="MyCarDB.Store.MyCarTrxExpenses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyCarTrx">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCarTrxExpense">
+        <PropertyRef Name="MyCarTrxId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyCarExpenseTypeMyCarTrxExpense">
+    <End Role="MyCarExpenseType" Type="MyCarDB.Store.MyCarExpenseTypes" Multiplicity="1" />
+    <End Role="MyCarTrxExpense" Type="MyCarDB.Store.MyCarTrxExpenses" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyCarExpenseType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCarTrxExpense">
+        <PropertyRef Name="MyCarExpenseTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyCarMyCarReminder">
+    <End Role="MyCar" Type="MyCarDB.Store.MyCars" Multiplicity="1" />
+    <End Role="MyCarReminder" Type="MyCarDB.Store.MyCarReminders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyCar">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCarReminder">
+        <PropertyRef Name="MyCarId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyReminderTypeMyCarReminder">
+    <End Role="MyReminderType" Type="MyCarDB.Store.MyReminderTypes" Multiplicity="1" />
+    <End Role="MyCarReminder" Type="MyCarDB.Store.MyCarReminders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyReminderType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCarReminder">
+        <PropertyRef Name="MyReminderTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyAccountMySupportLogin">
+    <End Role="MyAccount" Type="MyCarDB.Store.MyAccounts" Multiplicity="1" />
+    <End Role="MySupportLogin" Type="MyCarDB.Store.MySupportLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyAccount">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MySupportLogin">
+        <PropertyRef Name="MyAccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyAccountMyCar">
+    <End Role="MyAccount" Type="MyCarDB.Store.MyAccounts" Multiplicity="1" />
+    <End Role="MyCar" Type="MyCarDB.Store.MyCars" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyAccount">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyCar">
+        <PropertyRef Name="MyAccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyGarageMyGarageAdmin">
+    <End Role="MyGarage" Type="MyCarDB.Store.MyGarages" Multiplicity="1" />
+    <End Role="MyGarageAdmin" Type="MyCarDB.Store.MyGarageLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyGarage">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyGarageAdmin">
+        <PropertyRef Name="MyGarageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MySupportLoginMyGarageLogin">
+    <End Role="MySupportLogin" Type="MyCarDB.Store.MySupportLogins" Multiplicity="1" />
+    <End Role="MyGarageLogin" Type="MyCarDB.Store.MyGarageLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MySupportLogin">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyGarageLogin">
+        <PropertyRef Name="MySupportLoginId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyDriverMyDriverLogin">
+    <End Role="MyDriver" Type="MyCarDB.Store.MyDrivers" Multiplicity="1" />
+    <End Role="MyDriverLogin" Type="MyCarDB.Store.MyDriverLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyDriver">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyDriverLogin">
+        <PropertyRef Name="MyDriverId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MySupportLoginMyDriverLogin">
+    <End Role="MySupportLogin" Type="MyCarDB.Store.MySupportLogins" Multiplicity="1" />
+    <End Role="MyDriverLogin" Type="MyCarDB.Store.MyDriverLogins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MySupportLogin">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyDriverLogin">
+        <PropertyRef Name="MySupportLoginId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyAccountMyDriver">
+    <End Role="MyAccount" Type="MyCarDB.Store.MyAccounts" Multiplicity="1" />
+    <End Role="MyDriver" Type="MyCarDB.Store.MyDrivers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyAccount">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyDriver">
+        <PropertyRef Name="MyAccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="MyAccountMyGarage">
+    <End Role="MyAccount" Type="MyCarDB.Store.MyAccounts" Multiplicity="1" />
+    <End Role="MyGarage" Type="MyCarDB.Store.MyGarages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MyAccount">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MyGarage">
+        <PropertyRef Name="MyAccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

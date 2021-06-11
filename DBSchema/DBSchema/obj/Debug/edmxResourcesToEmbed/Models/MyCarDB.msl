@@ -1,6 +1,234 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
-  <Alias Key="Model" Value="MyCarDB" />
-  <Alias Key="Target" Value="MyCarDB.Store" />
-  <EntityContainerMapping CdmEntityContainer="MyCarDBContainer" StorageEntityContainer="MyCarDBTargetContainer" />
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyCarDBStoreContainer" CdmEntityContainer="MyCarDBContainer">
+    <EntitySetMapping Name="MyCars">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCar)">
+        <MappingFragment StoreEntitySet="MyCars">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Variant" ColumnName="Variant" />
+          <ScalarProperty Name="MyCarModelId" ColumnName="MyCarModelId" />
+          <ScalarProperty Name="MyCarFuelId" ColumnName="MyCarFuelId" />
+          <ScalarProperty Name="MyCarTransmissionId" ColumnName="MyCarTransmissionId" />
+          <ScalarProperty Name="MyCarDrivetrainId" ColumnName="MyCarDrivetrainId" />
+          <ScalarProperty Name="PlateNo" ColumnName="PlateNo" />
+          <ScalarProperty Name="Conduction" ColumnName="Conduction" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="MyAccountId" ColumnName="MyAccountId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyCarModels">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCarModel)">
+        <MappingFragment StoreEntitySet="MyCarModels">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="MyCarMakeId" ColumnName="MyCarMakeId" />
+          <ScalarProperty Name="MyCarTypeId" ColumnName="MyCarTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyCarMakes">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCarMake)">
+        <MappingFragment StoreEntitySet="MyCarMakes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyCarTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCarType)">
+        <MappingFragment StoreEntitySet="MyCarTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyCarFuels">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCarFuel)">
+        <MappingFragment StoreEntitySet="MyCarFuels">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Fuel" ColumnName="Fuel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyCarTransmissions">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCarTransmission)">
+        <MappingFragment StoreEntitySet="MyCarTransmissions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Transmission" ColumnName="Transmission" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyCarDrivetrains">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCarDrivetrain)">
+        <MappingFragment StoreEntitySet="MyCarDrivetrains">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Drivetrain" ColumnName="Drivetrain" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyGarages">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyGarage)">
+        <MappingFragment StoreEntitySet="MyGarages">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="MyAccountId" ColumnName="MyAccountId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyDrivers">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyDriver)">
+        <MappingFragment StoreEntitySet="MyDrivers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LicNo" ColumnName="LicNo" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="MyAccountId" ColumnName="MyAccountId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyCarTrxes">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCarTrx)">
+        <MappingFragment StoreEntitySet="MyCarTrxes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MyCarTrxTypeId" ColumnName="MyCarTrxTypeId" />
+          <ScalarProperty Name="MyCarId" ColumnName="MyCarId" />
+          <ScalarProperty Name="TrxDate" ColumnName="TrxDate" />
+          <ScalarProperty Name="TrxTime" ColumnName="TrxTime" />
+          <ScalarProperty Name="TrxMileage" ColumnName="TrxMileage" />
+          <ScalarProperty Name="EnteredBy" ColumnName="EnteredBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyCarTrxGarages">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCarTrxGarage)">
+        <MappingFragment StoreEntitySet="MyCarTrxGarages">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MyCarTrxId" ColumnName="MyCarTrxId" />
+          <ScalarProperty Name="MyGarageId" ColumnName="MyGarageId" />
+          <ScalarProperty Name="InFlag" ColumnName="InFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyCarTrxDrivers">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCarTrxDriver)">
+        <MappingFragment StoreEntitySet="MyCarTrxDrivers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MyCarTrxId" ColumnName="MyCarTrxId" />
+          <ScalarProperty Name="MyDriverId" ColumnName="MyDriverId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyCarTrxFuels">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCarTrxFuel)">
+        <MappingFragment StoreEntitySet="MyCarTrxFuels">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="MyCarTrxId" ColumnName="MyCarTrxId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyCarTrxServices">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCarTrxService)">
+        <MappingFragment StoreEntitySet="MyCarTrxServices">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="MyCarTrxId" ColumnName="MyCarTrxId" />
+          <ScalarProperty Name="MyCarServiceTypeId" ColumnName="MyCarServiceTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyCarServiceTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCarServiceType)">
+        <MappingFragment StoreEntitySet="MyCarServiceTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyCarTrxExpenses">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCarTrxExpense)">
+        <MappingFragment StoreEntitySet="MyCarTrxExpenses">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+          <ScalarProperty Name="MyCarTrxId" ColumnName="MyCarTrxId" />
+          <ScalarProperty Name="MyCarExpenseTypeId" ColumnName="MyCarExpenseTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyCarExpenseTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCarExpenseType)">
+        <MappingFragment StoreEntitySet="MyCarExpenseTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyCarReminders">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyCarReminder)">
+        <MappingFragment StoreEntitySet="MyCarReminders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MyCarId" ColumnName="MyCarId" />
+          <ScalarProperty Name="DtEntered" ColumnName="DtEntered" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="DtRemind" ColumnName="DtRemind" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="MyReminderTypeId" ColumnName="MyReminderTypeId" />
+          <ScalarProperty Name="SendNotification" ColumnName="SendNotification" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyReminderTypes">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyReminderType)">
+        <MappingFragment StoreEntitySet="MyReminderTypes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyAccounts">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyAccount)">
+        <MappingFragment StoreEntitySet="MyAccounts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LoginId" ColumnName="LoginId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MySupportLogins">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MySupportLogin)">
+        <MappingFragment StoreEntitySet="MySupportLogins">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MyAccountId" ColumnName="MyAccountId" />
+          <ScalarProperty Name="LoginId" ColumnName="LoginId" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyGarageLogins">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyGarageLogin)">
+        <MappingFragment StoreEntitySet="MyGarageLogins">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MyGarageId" ColumnName="MyGarageId" />
+          <ScalarProperty Name="MySupportLoginId" ColumnName="MySupportLoginId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyDriverLogins">
+      <EntityTypeMapping TypeName="IsTypeOf(MyCarDB.MyDriverLogin)">
+        <MappingFragment StoreEntitySet="MyDriverLogins">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MyDriverId" ColumnName="MyDriverId" />
+          <ScalarProperty Name="MySupportLoginId" ColumnName="MySupportLoginId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
 </Mapping>
