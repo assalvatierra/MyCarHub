@@ -19,6 +19,8 @@ namespace DBSchema.Models
         {
             this.MySupportLogins = new HashSet<MySupportLogin>();
             this.MyCars = new HashSet<MyCar>();
+            this.MyDrivers = new HashSet<MyDriver>();
+            this.MyGarages = new HashSet<MyGarage>();
         }
     
         public int Id { get; set; }
@@ -29,5 +31,9 @@ namespace DBSchema.Models
         public virtual ICollection<MySupportLogin> MySupportLogins { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MyCar> MyCars { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<MyDriver> MyDrivers { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<MyGarage> MyGarages { get; set; }
     }
 }

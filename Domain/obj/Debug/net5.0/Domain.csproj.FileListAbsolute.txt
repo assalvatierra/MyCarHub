@@ -1,0 +1,11 @@
+C:\Abel\GitHub\MyCarHub\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\Abel\GitHub\MyCarHub\Domain\bin\Debug\net5.0\Domain.dll
+C:\Abel\GitHub\MyCarHub\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\Abel\GitHub\MyCarHub\Domain\bin\Debug\net5.0\Domain.pdb
+C:\Abel\GitHub\MyCarHub\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Abel\GitHub\MyCarHub\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Abel\GitHub\MyCarHub\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Abel\GitHub\MyCarHub\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Abel\GitHub\MyCarHub\Domain\obj\Debug\net5.0\Domain.dll
+C:\Abel\GitHub\MyCarHub\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\Abel\GitHub\MyCarHub\Domain\obj\Debug\net5.0\Domain.pdb

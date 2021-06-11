@@ -1,0 +1,12 @@
+C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\bin\Debug\net5.0\DataLayer.EFCore.deps.json
+C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\bin\Debug\net5.0\DataLayer.EFCore.dll
+C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\bin\Debug\net5.0\ref\DataLayer.EFCore.dll
+C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\bin\Debug\net5.0\DataLayer.EFCore.pdb
+C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\obj\Debug\net5.0\DataLayer.EFCore.csprojAssemblyReference.cache
+C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\obj\Debug\net5.0\DataLayer.EFCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\obj\Debug\net5.0\DataLayer.EFCore.AssemblyInfoInputs.cache
+C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\obj\Debug\net5.0\DataLayer.EFCore.AssemblyInfo.cs
+C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\obj\Debug\net5.0\DataLayer.EFCore.csproj.CoreCompileInputs.cache
+C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\obj\Debug\net5.0\DataLayer.EFCore.dll
+C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\obj\Debug\net5.0\ref\DataLayer.EFCore.dll
+C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\obj\Debug\net5.0\DataLayer.EFCore.pdb

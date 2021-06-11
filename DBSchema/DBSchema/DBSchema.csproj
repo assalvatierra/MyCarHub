@@ -145,10 +145,89 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\MyAccount.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCar.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyCarDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\MyCarDB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>MyCarDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarDrivetrain.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarExpenseType.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarFuel.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarMake.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarModel.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarReminder.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarServiceType.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarTransmission.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarTrx.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarTrxDriver.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarTrxExpense.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarTrxFuel.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarTrxGarage.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarTrxService.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyCarType.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyDriver.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyDriverLogin.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyGarage.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyGarageLogin.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MyReminderType.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MySupportLogin.cs">
+      <DependentUpon>MyCarDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -163,6 +242,14 @@
     <Content Include="Content\Site.css" />
     <Content Include="Models\MyCarDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MyCarDB.Context.cs</LastGenOutput>
+      <DependentUpon>MyCarDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\MyCarDB.edmx.sql" />
+    <Content Include="Models\MyCarDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>MyCarDB.cs</LastGenOutput>
+      <DependentUpon>MyCarDB.edmx</DependentUpon>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -214,6 +301,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

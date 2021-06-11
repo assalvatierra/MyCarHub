@@ -25,10 +25,12 @@ namespace DBSchema.Models
         public string Name { get; set; }
         public string LicNo { get; set; }
         public string Remarks { get; set; }
+        public int MyAccountId { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MyCarTrxDriver> MyCarTrxDrivers { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MyDriverLogin> MyDriverLogins { get; set; }
+        public virtual MyAccount MyAccount { get; set; }
     }
 }
