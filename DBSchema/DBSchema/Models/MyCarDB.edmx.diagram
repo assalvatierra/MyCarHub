@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d4fced9ef75b47518b231f7761f4baa2" Name="Diagram1" ZoomLevel="71" >
+        <EntityTypeShape EntityType="MyCarDB.MyCar" Width="1.5" PointX="7.375" PointY="5.25" />
+        <EntityTypeShape EntityType="MyCarDB.MyCarModel" Width="1.5" PointX="4.5" PointY="3.125" />
+        <EntityTypeShape EntityType="MyCarDB.MyCarMake" Width="1.5" PointX="1.75" PointY="3" />
+        <AssociationConnector Association="MyCarDB.MyCarMakeMyCarModel" />
+        <EntityTypeShape EntityType="MyCarDB.MyCarType" Width="1.5" PointX="1.75" PointY="4.875" />
+        <AssociationConnector Association="MyCarDB.MyCarTypeMyCarModel" />
+        <EntityTypeShape EntityType="MyCarDB.MyCarFuel" Width="1.5" PointX="4.5" PointY="7.5" />
+        <EntityTypeShape EntityType="MyCarDB.MyCarTransmission" Width="1.5" PointX="4.5" PointY="9.25" />
+        <EntityTypeShape EntityType="MyCarDB.MyCarDrivetrain" Width="1.5" PointX="4.5" PointY="5.75" />
+        <AssociationConnector Association="MyCarDB.MyCarModelMyCar" />
+        <AssociationConnector Association="MyCarDB.MyCarFuelMyCar" />
+        <AssociationConnector Association="MyCarDB.MyCarTransmissionMyCar" />
+        <AssociationConnector Association="MyCarDB.MyCarDrivetrainMyCar" />
+        <EntityTypeShape EntityType="MyCarDB.MyGarage" Width="1.5" PointX="17.625" PointY="6.75" />
+        <EntityTypeShape EntityType="MyCarDB.MyDriver" Width="1.5" PointX="15.25" PointY="6.75" />
+        <EntityTypeShape EntityType="MyCarDB.MyCarTrx" Width="1.5" PointX="7.5" PointY="13.25" />
+        <AssociationConnector Association="MyCarDB.MyCarMyCarTrx" />
+        <EntityTypeShape EntityType="MyCarDB.MyCarTrxGarage" Width="1.5" PointX="10.625" PointY="14.875" />
+        <AssociationConnector Association="MyCarDB.MyCarTrxMyCarGarageTrx" />
+        <AssociationConnector Association="MyCarDB.MyGarageMyCarGarageTrx" />
+        <EntityTypeShape EntityType="MyCarDB.MyCarTrxDriver" Width="1.5" PointX="10.625" PointY="12.5" />
+        <AssociationConnector Association="MyCarDB.MyCarTrxMyCarTrxDriver" />
+        <AssociationConnector Association="MyCarDB.MyDriverMyCarTrxDriver" />
+        <EntityTypeShape EntityType="MyCarDB.MyCarTrxFuel" Width="1.5" PointX="4.375" PointY="15" />
+        <AssociationConnector Association="MyCarDB.MyCarTrxMyCarTrxFuel" />
+        <EntityTypeShape EntityType="MyCarDB.MyCarTrxService" Width="1.5" PointX="6.375" PointY="17.75" />
+        <AssociationConnector Association="MyCarDB.MyCarTrxMyCarService" />
+        <EntityTypeShape EntityType="MyCarDB.MyCarServiceType" Width="1.5" PointX="4.25" PointY="17.75" />
+        <AssociationConnector Association="MyCarDB.MyCarServiceTypeMyCarTrxService" />
+        <EntityTypeShape EntityType="MyCarDB.MyCarTrxExpense" Width="1.5" PointX="8.5" PointY="17.75" />
+        <AssociationConnector Association="MyCarDB.MyCarTrxMyCarTrxExpense" />
+        <EntityTypeShape EntityType="MyCarDB.MyCarExpenseType" Width="1.5" PointX="10.625" PointY="17.75" />
+        <AssociationConnector Association="MyCarDB.MyCarExpenseTypeMyCarTrxExpense" />
+        <EntityTypeShape EntityType="MyCarDB.MyCarReminder" Width="1.5" PointX="10.125" PointY="7.625" />
+        <AssociationConnector Association="MyCarDB.MyCarMyCarReminder" />
+        <EntityTypeShape EntityType="MyCarDB.MyReminderType" Width="1.5" PointX="10.125" PointY="5.5" />
+        <AssociationConnector Association="MyCarDB.MyReminderTypeMyCarReminder" />
+        <EntityTypeShape EntityType="MyCarDB.MyAccount" Width="1.5" PointX="7.625" PointY="0.625" />
+        <EntityTypeShape EntityType="MyCarDB.MySupportLogin" Width="1.5" PointX="15.25" PointY="0.625" />
+        <AssociationConnector Association="MyCarDB.MyAccountMySupportLogin" />
+        <AssociationConnector Association="MyCarDB.MyAccountMyCar" />
+        <EntityTypeShape EntityType="MyCarDB.MyGarageLogin" Width="1.5" PointX="17.625" PointY="3.875" />
+        <AssociationConnector Association="MyCarDB.MyGarageMyGarageAdmin" />
+        <AssociationConnector Association="MyCarDB.MySupportLoginMyGarageLogin" />
+        <EntityTypeShape EntityType="MyCarDB.MyDriverLogin" Width="1.5" PointX="15.25" PointY="3.875" />
+        <AssociationConnector Association="MyCarDB.MyDriverMyDriverLogin" />
+        <AssociationConnector Association="MyCarDB.MySupportLoginMyDriverLogin" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
