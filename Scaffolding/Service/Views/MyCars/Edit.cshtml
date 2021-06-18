@@ -1,0 +1,79 @@
+﻿@model Domain.Entities.MyCar
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>MyCar</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="Year" class="control-label"></label>
+                <input asp-for="Year" class="form-control" />
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Variant" class="control-label"></label>
+                <input asp-for="Variant" class="form-control" />
+                <span asp-validation-for="Variant" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyCarModelId" class="control-label"></label>
+                <select asp-for="MyCarModelId" class="form-control" asp-items="ViewBag.MyCarModelId"></select>
+                <span asp-validation-for="MyCarModelId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyCarFuelId" class="control-label"></label>
+                <select asp-for="MyCarFuelId" class="form-control" asp-items="ViewBag.MyCarFuelId"></select>
+                <span asp-validation-for="MyCarFuelId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyCarTransmissionId" class="control-label"></label>
+                <select asp-for="MyCarTransmissionId" class="form-control" asp-items="ViewBag.MyCarTransmissionId"></select>
+                <span asp-validation-for="MyCarTransmissionId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyCarDrivetrainId" class="control-label"></label>
+                <select asp-for="MyCarDrivetrainId" class="form-control" asp-items="ViewBag.MyCarDrivetrainId"></select>
+                <span asp-validation-for="MyCarDrivetrainId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PlateNo" class="control-label"></label>
+                <input asp-for="PlateNo" class="form-control" />
+                <span asp-validation-for="PlateNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Conduction" class="control-label"></label>
+                <input asp-for="Conduction" class="form-control" />
+                <span asp-validation-for="Conduction" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Vin" class="control-label"></label>
+                <input asp-for="Vin" class="form-control" />
+                <span asp-validation-for="Vin" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyAccountId" class="control-label"></label>
+                <select asp-for="MyAccountId" class="form-control" asp-items="ViewBag.MyAccountId"></select>
+                <span asp-validation-for="MyAccountId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

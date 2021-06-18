@@ -8,7 +8,7 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ELVIE\\.nuget\\packages\\": {}
+    "C:\\Users\\abel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -16,11 +16,11 @@
       "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj",
       "projectName": "Domain",
       "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\ELVIE\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\abel\\.nuget\\packages\\",
       "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ELVIE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
