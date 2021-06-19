@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using Domain.BLLInterfaces;
 using Domain.Entities;
 using Domain.Interfaces;
-using DataLayer.EFCore;
-using DataLayer.EFCore.Repositories;
+using DataLayer;
+using DataLayer.Repositories;
 
 
 namespace BusinessLayer
@@ -34,6 +34,11 @@ namespace BusinessLayer
         public IEnumerable<MyCar> getMyCarList()
         {
             return this.MyCars.GetAll();
+        }
+
+        public MyCar getMyCar(int id)
+        {
+            return this.MyCars.GetById(id);
         }
 
 

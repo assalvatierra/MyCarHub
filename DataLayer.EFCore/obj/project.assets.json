@@ -1482,6 +1482,20 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "DataLayer.DBContext/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "5.0.7"
+        },
+        "compile": {
+          "bin/placeholder/DataLayer.DBContext.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataLayer.DBContext.dll": {}
+        }
+      },
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -5704,6 +5718,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "DataLayer.DBContext/1.0.0": {
+      "type": "project",
+      "path": "../DataLayer.DBContext/DataLayer.DBContext.csproj",
+      "msbuildProject": "../DataLayer.DBContext/DataLayer.DBContext.csproj"
+    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -5712,6 +5731,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "DataLayer.DBContext >= 1.0.0",
       "Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.7"
@@ -5744,6 +5764,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.DBContext\\DataLayer.DBContext.csproj": {
+              "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.DBContext\\DataLayer.DBContext.csproj"
+            },
             "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj"
             }

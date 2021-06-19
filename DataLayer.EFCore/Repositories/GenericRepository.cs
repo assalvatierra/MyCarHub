@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Domain.Interfaces;
-using DataLayer.EFCore;
+using DataLayer;
 
-namespace DataLayer.EFCore.Repositories
+namespace DataLayer.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {

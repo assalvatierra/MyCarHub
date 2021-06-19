@@ -9,3 +9,4 @@ C:\Abel\GitHub\MyCarHub\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.
 C:\Abel\GitHub\MyCarHub\Domain\obj\Debug\net5.0\Domain.dll
 C:\Abel\GitHub\MyCarHub\Domain\obj\Debug\net5.0\ref\Domain.dll
 C:\Abel\GitHub\MyCarHub\Domain\obj\Debug\net5.0\Domain.pdb
+C:\Abel\GitHub\MyCarHub\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache

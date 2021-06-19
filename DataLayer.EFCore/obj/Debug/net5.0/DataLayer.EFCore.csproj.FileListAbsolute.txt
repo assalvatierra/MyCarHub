@@ -13,3 +13,5 @@ C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\obj\Debug\net5.0\DataLayer.EFCore.cspro
 C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\bin\Debug\net5.0\Domain.dll
 C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\bin\Debug\net5.0\Domain.pdb
 C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\obj\Debug\net5.0\DataLayer.EFCore.csproj.CopyComplete
+C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\bin\Debug\net5.0\DataLayer.DBContext.dll
+C:\Abel\GitHub\MyCarHub\DataLayer.EFCore\bin\Debug\net5.0\DataLayer.DBContext.pdb

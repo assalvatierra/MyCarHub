@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Domain.Entities;
 using Domain.Interfaces;
-using DataLayer.EFCore;
+using DataLayer;
 
-namespace DataLayer.EFCore.Repositories
+namespace DataLayer.Repositories
 {
     public class myCarRepository: GenericRepository<MyCar>, IMyCarRepository
     {

@@ -1,0 +1,15 @@
+C:\Abel\GitHub\MyCarHub\DataLayer.DBContext\bin\Debug\net5.0\DataLayer.DBContext.deps.json
+C:\Abel\GitHub\MyCarHub\DataLayer.DBContext\bin\Debug\net5.0\DataLayer.DBContext.dll
+C:\Abel\GitHub\MyCarHub\DataLayer.DBContext\bin\Debug\net5.0\ref\DataLayer.DBContext.dll
+C:\Abel\GitHub\MyCarHub\DataLayer.DBContext\bin\Debug\net5.0\DataLayer.DBContext.pdb
+C:\Abel\GitHub\MyCarHub\DataLayer.DBContext\bin\Debug\net5.0\Domain.dll
+C:\Abel\GitHub\MyCarHub\DataLayer.DBContext\bin\Debug\net5.0\Domain.pdb
+C:\Abel\GitHub\MyCarHub\DataLayer.DBContext\obj\Debug\net5.0\DataLayer.DBContext.csprojAssemblyReference.cache
+C:\Abel\GitHub\MyCarHub\DataLayer.DBContext\obj\Debug\net5.0\DataLayer.DBContext.GeneratedMSBuildEditorConfig.editorconfig
+C:\Abel\GitHub\MyCarHub\DataLayer.DBContext\obj\Debug\net5.0\DataLayer.DBContext.AssemblyInfoInputs.cache
+C:\Abel\GitHub\MyCarHub\DataLayer.DBContext\obj\Debug\net5.0\DataLayer.DBContext.AssemblyInfo.cs
+C:\Abel\GitHub\MyCarHub\DataLayer.DBContext\obj\Debug\net5.0\DataLayer.DBContext.csproj.CoreCompileInputs.cache
+C:\Abel\GitHub\MyCarHub\DataLayer.DBContext\obj\Debug\net5.0\DataLayer.DBContext.csproj.CopyComplete
+C:\Abel\GitHub\MyCarHub\DataLayer.DBContext\obj\Debug\net5.0\DataLayer.DBContext.dll
+C:\Abel\GitHub\MyCarHub\DataLayer.DBContext\obj\Debug\net5.0\ref\DataLayer.DBContext.dll
+C:\Abel\GitHub\MyCarHub\DataLayer.DBContext\obj\Debug\net5.0\DataLayer.DBContext.pdb

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Domain.Entities;
 
 
-namespace DataLayer.EFCore
+namespace DataLayer
 {
     public partial class MyCarDBContext : DbContext
     {

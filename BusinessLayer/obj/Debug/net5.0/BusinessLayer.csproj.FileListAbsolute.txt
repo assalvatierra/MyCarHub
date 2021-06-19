@@ -15,3 +15,5 @@ C:\Abel\GitHub\MyCarHub\BusinessLayer\obj\Debug\net5.0\BusinessLayer.csproj.Copy
 C:\Abel\GitHub\MyCarHub\BusinessLayer\obj\Debug\net5.0\BusinessLayer.dll
 C:\Abel\GitHub\MyCarHub\BusinessLayer\obj\Debug\net5.0\ref\BusinessLayer.dll
 C:\Abel\GitHub\MyCarHub\BusinessLayer\obj\Debug\net5.0\BusinessLayer.pdb
+C:\Abel\GitHub\MyCarHub\BusinessLayer\bin\Debug\net5.0\DataLayer.DBContext.dll
+C:\Abel\GitHub\MyCarHub\BusinessLayer\bin\Debug\net5.0\DataLayer.DBContext.pdb

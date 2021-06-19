@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore;
 
 using Domain.Interfaces;
 using Domain.BLLInterfaces;
-using DataLayer.EFCore;
-using DataLayer.EFCore.Repositories;
+using DataLayer;
+using DataLayer.Repositories;
 using BusinessLayer;
 
 namespace Service

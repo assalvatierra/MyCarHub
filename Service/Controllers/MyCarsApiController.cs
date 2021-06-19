@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 using Domain.Entities;
 using Domain.BLLInterfaces;
-using DataLayer.EFCore;
+using DataLayer;
 
 
 
@@ -47,7 +47,7 @@ namespace Service.Controllers
             }
             */
 
-            return null;
+            return vehicle.getMyCar(id);
 
         }
 

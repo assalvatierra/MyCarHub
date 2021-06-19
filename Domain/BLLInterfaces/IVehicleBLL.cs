@@ -11,7 +11,7 @@ namespace Domain.BLLInterfaces
     public interface IVehicleBLL
     {
         IEnumerable<MyCar> getMyCarList();
-
+        MyCar getMyCar(int id);
         int CommitChanges();
     }
 }
