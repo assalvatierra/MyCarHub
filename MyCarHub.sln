@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{44AFD1BC-8600-486D-8EB6-06063694353F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer.DBContext", "DataLayer.DBContext\DataLayer.DBContext.csproj", "{B6417544-D817-4061-AC35-F7EF5B689A5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLayer.DBContext", "DataLayer.DBContext\DataLayer.DBContext.csproj", "{B6417544-D817-4061-AC35-F7EF5B689A5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer.Tests", "BusinessLayer.Tests\BusinessLayer.Tests.csproj", "{44B231E8-DD67-4CD0-B215-6D9A3DEEF887}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{B6417544-D817-4061-AC35-F7EF5B689A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6417544-D817-4061-AC35-F7EF5B689A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6417544-D817-4061-AC35-F7EF5B689A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44B231E8-DD67-4CD0-B215-6D9A3DEEF887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44B231E8-DD67-4CD0-B215-6D9A3DEEF887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44B231E8-DD67-4CD0-B215-6D9A3DEEF887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44B231E8-DD67-4CD0-B215-6D9A3DEEF887}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

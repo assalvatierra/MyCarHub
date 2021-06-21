@@ -88,6 +88,7 @@ namespace Service
                     spa.UseReactDevelopmentServer(npmScript: "start");
                 }
             });
+
         }
     }
 }
