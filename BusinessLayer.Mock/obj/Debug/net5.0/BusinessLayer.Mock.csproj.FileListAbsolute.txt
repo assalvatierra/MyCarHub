@@ -1,0 +1,17 @@
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\obj\Debug\net5.0\BusinessLayer.Mock.csprojAssemblyReference.cache
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\obj\Debug\net5.0\BusinessLayer.Mock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\obj\Debug\net5.0\BusinessLayer.Mock.AssemblyInfoInputs.cache
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\obj\Debug\net5.0\BusinessLayer.Mock.AssemblyInfo.cs
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\obj\Debug\net5.0\BusinessLayer.Mock.csproj.CoreCompileInputs.cache
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\bin\Debug\net5.0\BusinessLayer.Mock.deps.json
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\bin\Debug\net5.0\BusinessLayer.Mock.dll
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\bin\Debug\net5.0\ref\BusinessLayer.Mock.dll
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\bin\Debug\net5.0\BusinessLayer.Mock.pdb
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\bin\Debug\net5.0\DataLayer.mock.dll
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\bin\Debug\net5.0\Domain.dll
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\bin\Debug\net5.0\DataLayer.mock.pdb
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\bin\Debug\net5.0\Domain.pdb
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\obj\Debug\net5.0\BusinessLayer.Mock.csproj.CopyComplete
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\obj\Debug\net5.0\BusinessLayer.Mock.dll
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\obj\Debug\net5.0\ref\BusinessLayer.Mock.dll
+C:\Abel\GitHub\MyCarHub\BusinessLayer.Mock\obj\Debug\net5.0\BusinessLayer.Mock.pdb

@@ -2477,6 +2477,19 @@
           "bin/placeholder/DataLayer.EFCore.dll": {}
         }
       },
+      "DataLayer.mock/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataLayer.mock.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataLayer.mock.dll": {}
+        }
+      },
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -8088,6 +8101,11 @@
       "path": "../DataLayer.EFCore/DataLayer.EFCore.csproj",
       "msbuildProject": "../DataLayer.EFCore/DataLayer.EFCore.csproj"
     },
+    "DataLayer.mock/1.0.0": {
+      "type": "project",
+      "path": "../DataLayer.mock/DataLayer.mock.csproj",
+      "msbuildProject": "../DataLayer.mock/DataLayer.mock.csproj"
+    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -8097,6 +8115,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "BusinessLayer >= 1.0.0",
+      "DataLayer.mock >= 1.0.0",
       "Domain >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "coverlet.collector >= 1.3.0",
@@ -8105,7 +8124,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\abel\\.nuget\\packages\\": {}
+    "C:\\Users\\ELVIE\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -8113,11 +8132,11 @@
       "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Tests\\BusinessLayer.Tests.csproj",
       "projectName": "BusinessLayer.Tests",
       "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Tests\\BusinessLayer.Tests.csproj",
-      "packagesPath": "C:\\Users\\abel\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\ELVIE\\.nuget\\packages\\",
       "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ELVIE\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8133,6 +8152,9 @@
           "projectReferences": {
             "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer\\BusinessLayer.csproj": {
               "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer\\BusinessLayer.csproj"
+            },
+            "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.mock\\DataLayer.mock.csproj": {
+              "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.mock\\DataLayer.mock.csproj"
             },
             "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj"
@@ -8186,7 +8208,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 using Domain.Entities;
 using Domain.Interfaces;
 
-namespace BusinessLayer.Tests
+namespace Mock.DataLayer
 {
-    class MyCarRepo : IMyCarRepository
+    public class myCarRepository : IMyCarRepository
     {
         private List<MyCar> mycars;
 
-        public MyCarRepo()
+        public myCarRepository()
         {
             this.mycars = new List<MyCar>();
             this.mycars.Add(new MyCar { Id = 1, Conduction = "T101", MyAccountId = 0, MyCarDrivetrainId = 1, MyCarFuelId = 1, MyCarModelId = 1, MyCarTransmissionId = 1, PlateNo = "LDP2264", Variant = "AMB", Vin = "123-456", Year = "2016" });

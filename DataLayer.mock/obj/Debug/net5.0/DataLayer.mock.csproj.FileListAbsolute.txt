@@ -1,0 +1,15 @@
+C:\Abel\GitHub\MyCarHub\DataLayer.mock\bin\Debug\net5.0\DataLayer.mock.deps.json
+C:\Abel\GitHub\MyCarHub\DataLayer.mock\bin\Debug\net5.0\DataLayer.mock.dll
+C:\Abel\GitHub\MyCarHub\DataLayer.mock\bin\Debug\net5.0\ref\DataLayer.mock.dll
+C:\Abel\GitHub\MyCarHub\DataLayer.mock\bin\Debug\net5.0\DataLayer.mock.pdb
+C:\Abel\GitHub\MyCarHub\DataLayer.mock\bin\Debug\net5.0\Domain.dll
+C:\Abel\GitHub\MyCarHub\DataLayer.mock\bin\Debug\net5.0\Domain.pdb
+C:\Abel\GitHub\MyCarHub\DataLayer.mock\obj\Debug\net5.0\DataLayer.mock.csprojAssemblyReference.cache
+C:\Abel\GitHub\MyCarHub\DataLayer.mock\obj\Debug\net5.0\DataLayer.mock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Abel\GitHub\MyCarHub\DataLayer.mock\obj\Debug\net5.0\DataLayer.mock.AssemblyInfoInputs.cache
+C:\Abel\GitHub\MyCarHub\DataLayer.mock\obj\Debug\net5.0\DataLayer.mock.AssemblyInfo.cs
+C:\Abel\GitHub\MyCarHub\DataLayer.mock\obj\Debug\net5.0\DataLayer.mock.csproj.CoreCompileInputs.cache
+C:\Abel\GitHub\MyCarHub\DataLayer.mock\obj\Debug\net5.0\DataLayer.mock.csproj.CopyComplete
+C:\Abel\GitHub\MyCarHub\DataLayer.mock\obj\Debug\net5.0\DataLayer.mock.dll
+C:\Abel\GitHub\MyCarHub\DataLayer.mock\obj\Debug\net5.0\ref\DataLayer.mock.dll
+C:\Abel\GitHub\MyCarHub\DataLayer.mock\obj\Debug\net5.0\DataLayer.mock.pdb
