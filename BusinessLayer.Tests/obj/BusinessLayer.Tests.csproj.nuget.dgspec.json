@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Tests\\BusinessLayer.Tests.csproj",
         "projectName": "BusinessLayer.Tests",
         "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Tests\\BusinessLayer.Tests.csproj",
-        "packagesPath": "C:\\Users\\ELVIE\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
         "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ELVIE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -96,11 +96,11 @@
         "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
         "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\ELVIE\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
         "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ELVIE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -147,7 +147,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -157,11 +157,11 @@
         "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.DBContext\\DataLayer.DBContext.csproj",
         "projectName": "DataLayer.DBContext",
         "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.DBContext\\DataLayer.DBContext.csproj",
-        "packagesPath": "C:\\Users\\ELVIE\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
         "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.DBContext\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ELVIE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -211,7 +211,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -221,11 +221,11 @@
         "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.EFCore\\DataLayer.EFCore.csproj",
         "projectName": "DataLayer.EFCore",
         "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.EFCore\\DataLayer.EFCore.csproj",
-        "packagesPath": "C:\\Users\\ELVIE\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
         "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ELVIE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -282,7 +282,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -292,11 +292,11 @@
         "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.mock\\DataLayer.mock.csproj",
         "projectName": "DataLayer.mock",
         "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.mock\\DataLayer.mock.csproj",
-        "packagesPath": "C:\\Users\\ELVIE\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
         "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.mock\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ELVIE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -340,7 +340,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -350,11 +350,11 @@
         "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj",
         "projectName": "Domain",
         "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\ELVIE\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
         "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ELVIE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -394,7 +394,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
