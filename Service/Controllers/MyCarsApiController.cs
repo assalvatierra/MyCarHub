@@ -12,7 +12,7 @@ using DataLayer;
 
 
 
-namespace Service.Controllers
+namespace Integration.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

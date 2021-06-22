@@ -2,19 +2,6 @@
   "version": 3,
   "targets": {
     "net5.0": {
-      "DataLayer.mock/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DataLayer.mock.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DataLayer.mock.dll": {}
-        }
-      },
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -28,11 +15,6 @@
     }
   },
   "libraries": {
-    "DataLayer.mock/1.0.0": {
-      "type": "project",
-      "path": "../DataLayer.mock/DataLayer.mock.csproj",
-      "msbuildProject": "../DataLayer.mock/DataLayer.mock.csproj"
-    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../Domain/Domain.csproj",
@@ -41,12 +23,11 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "DataLayer.mock >= 1.0.0",
       "Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hp\\.nuget\\packages\\": {}
+    "C:\\Users\\abel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -54,11 +35,11 @@
       "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Mock\\BusinessLayer.Mock.csproj",
       "projectName": "BusinessLayer.Mock",
       "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Mock\\BusinessLayer.Mock.csproj",
-      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\abel\\.nuget\\packages\\",
       "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Mock\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -72,9 +53,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.mock\\DataLayer.mock.csproj": {
-              "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.mock\\DataLayer.mock.csproj"
-            },
             "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj"
             }
@@ -105,7 +83,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

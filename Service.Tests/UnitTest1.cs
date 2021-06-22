@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 using Xunit;
-using Service.Controllers;
+using Integration.Controllers;
 using Domain.Entities;
 
-namespace Service.Tests
+namespace Integration.Tests
 {
     public class UnitTest1
     {
@@ -19,4 +19,7 @@ namespace Service.Tests
             Assert.True(mycars.Count== 3);
         }
     }
+
+
+
 }

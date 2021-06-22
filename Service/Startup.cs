@@ -15,7 +15,7 @@ using DataLayer;
 using DataLayer.Repositories;
 using BusinessLayer;
 
-namespace Service
+namespace Integration
 {
     public class Startup
     {
@@ -42,12 +42,12 @@ namespace Service
            options.UseSqlServer(Configuration.GetConnectionString("ServiceContext")));
 
             #region repositories
-            services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-            services.AddTransient<IMyCarRepository, myCarRepository>();
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IMyCarRepository, myCarRepository>();
             #endregion
 
             #region Business Layer classes
-            services.AddTransient<IVehicleBLL, BLLVehicles>();
+            services.AddScoped<IVehicleBLL, BLLVehicles>();
             #endregion
 
         }

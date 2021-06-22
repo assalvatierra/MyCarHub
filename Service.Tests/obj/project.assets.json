@@ -2497,20 +2497,6 @@
           "bin/placeholder/BusinessLayer.dll": {}
         }
       },
-      "BusinessLayer.Mock/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "DataLayer.mock": "1.0.0",
-          "Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/BusinessLayer.Mock.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BusinessLayer.Mock.dll": {}
-        }
-      },
       "DataLayer.DBContext/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -2539,19 +2525,6 @@
         },
         "runtime": {
           "bin/placeholder/DataLayer.EFCore.dll": {}
-        }
-      },
-      "DataLayer.mock/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DataLayer.mock.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DataLayer.mock.dll": {}
         }
       },
       "Domain/1.0.0": {
@@ -8250,11 +8223,6 @@
       "path": "../BusinessLayer/BusinessLayer.csproj",
       "msbuildProject": "../BusinessLayer/BusinessLayer.csproj"
     },
-    "BusinessLayer.Mock/1.0.0": {
-      "type": "project",
-      "path": "../BusinessLayer.Mock/BusinessLayer.Mock.csproj",
-      "msbuildProject": "../BusinessLayer.Mock/BusinessLayer.Mock.csproj"
-    },
     "DataLayer.DBContext/1.0.0": {
       "type": "project",
       "path": "../DataLayer.DBContext/DataLayer.DBContext.csproj",
@@ -8264,11 +8232,6 @@
       "type": "project",
       "path": "../DataLayer.EFCore/DataLayer.EFCore.csproj",
       "msbuildProject": "../DataLayer.EFCore/DataLayer.EFCore.csproj"
-    },
-    "DataLayer.mock/1.0.0": {
-      "type": "project",
-      "path": "../DataLayer.mock/DataLayer.mock.csproj",
-      "msbuildProject": "../DataLayer.mock/DataLayer.mock.csproj"
     },
     "Domain/1.0.0": {
       "type": "project",
@@ -8283,7 +8246,6 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "BusinessLayer.Mock >= 1.0.0",
       "Domain >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "Service >= 1.0.0",
@@ -8293,7 +8255,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hp\\.nuget\\packages\\": {}
+    "C:\\Users\\abel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -8301,11 +8263,11 @@
       "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\Service.Tests\\Service.Tests.csproj",
       "projectName": "Service.Tests",
       "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\Service.Tests\\Service.Tests.csproj",
-      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\abel\\.nuget\\packages\\",
       "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\Service.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8319,9 +8281,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Mock\\BusinessLayer.Mock.csproj": {
-              "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Mock\\BusinessLayer.Mock.csproj"
-            },
             "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj"
             },
@@ -8377,7 +8336,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

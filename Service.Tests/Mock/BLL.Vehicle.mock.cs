@@ -7,7 +7,7 @@ using Domain.BLLInterfaces;
 using Domain.Entities;
 using Domain.Interfaces;
 
-namespace Service.Tests
+namespace Integration.Tests
 {
     public class MockBLLVehicles : IVehicleBLL
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace Service
+namespace Integration
 {
     public class WeatherForecast
     {

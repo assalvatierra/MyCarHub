@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v5.0": {
       "Service.Tests/1.0.0": {
         "dependencies": {
-          "BusinessLayer.Mock": "1.0.0",
           "Domain": "1.0.0",
           "Microsoft.NET.Test.Sdk": "16.7.1",
           "Service": "1.0.0",
@@ -1615,15 +1614,6 @@
           "BusinessLayer.dll": {}
         }
       },
-      "BusinessLayer.Mock/1.0.0": {
-        "dependencies": {
-          "DataLayer.mock": "1.0.0",
-          "Domain": "1.0.0"
-        },
-        "runtime": {
-          "BusinessLayer.Mock.dll": {}
-        }
-      },
       "DataLayer.DBContext/1.0.0": {
         "dependencies": {
           "Domain": "1.0.0",
@@ -1642,14 +1632,6 @@
         },
         "runtime": {
           "DataLayer.EFCore.dll": {}
-        }
-      },
-      "DataLayer.mock/1.0.0": {
-        "dependencies": {
-          "Domain": "1.0.0"
-        },
-        "runtime": {
-          "DataLayer.mock.dll": {}
         }
       },
       "Domain/1.0.0": {
@@ -2691,22 +2673,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "BusinessLayer.Mock/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "DataLayer.DBContext/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "DataLayer.EFCore/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "DataLayer.mock/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

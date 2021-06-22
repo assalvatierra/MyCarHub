@@ -151,5 +151,3 @@ C:\Abel\GitHub\MyCarHub\BusinessLayer.Tests\bin\Debug\net5.0\BusinessLayer.pdb
 C:\Abel\GitHub\MyCarHub\BusinessLayer.Tests\bin\Debug\net5.0\Domain.pdb
 C:\Abel\GitHub\MyCarHub\BusinessLayer.Tests\bin\Debug\net5.0\DataLayer.DBContext.pdb
 C:\Abel\GitHub\MyCarHub\BusinessLayer.Tests\bin\Debug\net5.0\DataLayer.EFCore.pdb
-C:\Abel\GitHub\MyCarHub\BusinessLayer.Tests\bin\Debug\net5.0\DataLayer.mock.dll
-C:\Abel\GitHub\MyCarHub\BusinessLayer.Tests\bin\Debug\net5.0\DataLayer.mock.pdb

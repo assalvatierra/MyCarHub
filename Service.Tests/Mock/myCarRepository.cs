@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Domain.Entities;
 using Domain.Interfaces;
 
-namespace Service.Tests
+namespace Integration.Tests
 {
     public class MockCarRepository : IMyCarRepository
     {
