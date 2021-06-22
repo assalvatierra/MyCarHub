@@ -6,7 +6,7 @@ using Xunit;
 using Integration.Controllers;
 using Domain.Entities;
 
-namespace Integration.Tests
+namespace Service.Tests
 {
     public class UnitTest1
     {

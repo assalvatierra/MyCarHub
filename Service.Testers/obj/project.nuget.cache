@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r5wj0FrlN43MT9v588349ca1Cid6r8Nxs+y16BD8UxuzK1tlzuqtGMVyJOU/DCocWr3CWWZmypQZjLrpDG5A0Q==",
+  "dgSpecHash": "9fwVPN+qecJmC6+hL0XBixbnMzSw0fRkt1ESdnHfiIp+xSiqnuhS9Ut5dSBawWs0fqP/2aRn8vVk61ROAomwIg==",
   "success": true,
-  "projectFilePath": "C:\\Abel\\GitHub\\MyCarHub\\Service.Tests\\Service.Testers.csproj",
+  "projectFilePath": "C:\\Abel\\GitHub\\MyCarHub\\Service.Testers\\Service.Testers.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abel\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\abel\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\5.0.5\\microsoft.aspnetcore.spaservices.extensions.5.0.5.nupkg.sha512",

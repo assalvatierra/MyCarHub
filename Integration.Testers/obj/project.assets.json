@@ -8996,11 +8996,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\Service.TestHost\\Integration.Test.csproj",
-      "projectName": "Integration.Test",
-      "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\Service.TestHost\\Integration.Test.csproj",
+      "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\Integration.Testers\\Integration.Testers.csproj",
+      "projectName": "Integration.Testers",
+      "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\Integration.Testers\\Integration.Testers.csproj",
       "packagesPath": "C:\\Users\\abel\\.nuget\\packages\\",
-      "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\Service.TestHost\\obj\\",
+      "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\Integration.Testers\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\abel\\AppData\\Roaming\\NuGet\\NuGet.Config",

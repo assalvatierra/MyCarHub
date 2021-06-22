@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Tests\\BusinessLayer.Testers.csproj": {}
+    "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Testers\\BusinessLayer.Testers.csproj": {}
   },
   "projects": {
-    "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Tests\\BusinessLayer.Testers.csproj": {
+    "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Testers\\BusinessLayer.Testers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Tests\\BusinessLayer.Testers.csproj",
+        "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Testers\\BusinessLayer.Testers.csproj",
         "projectName": "BusinessLayer.Testers",
-        "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Tests\\BusinessLayer.Testers.csproj",
+        "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Testers\\BusinessLayer.Testers.csproj",
         "packagesPath": "C:\\Users\\abel\\.nuget\\packages\\",
-        "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Tests\\obj\\",
+        "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer.Testers\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
