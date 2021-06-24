@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using DataLayer;
 
 namespace DataLayer.Repositories
@@ -44,5 +45,10 @@ namespace DataLayer.Repositories
         {
             _context.Set<T>().RemoveRange(entities);
         }
+        public void Update(T entity)
+        {
+            _context.Set<T>().Attach(entity).State = EntityState.Modified; 
+        }
+       
     }
 }

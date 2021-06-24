@@ -39,44 +39,46 @@ namespace Webapp.Pages.Vehicles
                 return NotFound();
             }
 
-            //           ViewData["MyAccountId"] = new SelectList(_context.Set<MyAccount>(), "Id", "Id");
-                       ViewData["MyCarDrivetrainId"] = new SelectList(this.vehicle.Drivetrains, "Id", "Drivetrain");
-            //           ViewData["MyCarFuelId"] = new SelectList(_context.Set<MyCarFuel>(), "Id", "Id");
-            //           ViewData["MyCarModelId"] = new SelectList(_context.Set<MyCarModel>(), "Id", "Id");
-            //           ViewData["MyCarTransmissionId"] = new SelectList(_context.Set<MyCarTransmission>(), "Id", "Id");
-            
+            ViewData["MyAccountId"] = new SelectList(this.vehicle.MyAccounts, "Id", "Id");
+            ViewData["MyCarDrivetrainId"] = new SelectList(this.vehicle.Drivetrains, "Id", "Drivetrain");
+            ViewData["MyCarFuelId"] = new SelectList(this.vehicle.CarFuels, "Id", "Id");
+            ViewData["MyCarModelId"] = new SelectList(this.vehicle.CarModels, "Id", "Id");
+            ViewData["MyCarTransmissionId"] = new SelectList(this.vehicle.CarTransmissions, "Id", "Id");
+
             return Page();
         }
 
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see https://aka.ms/RazorPagesCRUD.
-        //public async Task<IActionResult> OnPostAsync()
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return Page();
-        //    }
+        public IActionResult OnPostAsync()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
 
-        //    _context.Attach(MyCar).State = EntityState.Modified;
+            this.vehicle.UpdateCar(MyCar);
+            //_context.Attach(MyCar).State = EntityState.Modified;
 
-        //    try
-        //    {
-        //        await _context.SaveChangesAsync();
-        //    }
-        //    catch (DbUpdateConcurrencyException)
-        //    {
-        //        if (!MyCarExists(MyCar.Id))
-        //        {
-        //            return NotFound();
-        //        }
-        //        else
-        //        {
-        //            throw;
-        //        }
-        //    }
+            try
+            {
+                this.vehicle.CommitChanges();
+                //await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!this.vehicle.isCarExist(MyCar.Id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
 
-        //    return RedirectToPage("./Index");
-        //}
+            return RedirectToPage("./Index");
+        }
 
         //private bool MyCarExists(int id)
         //{

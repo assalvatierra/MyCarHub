@@ -28,7 +28,7 @@ namespace BusinessLayer
 
         public int CommitChanges()
         {
-            throw new NotImplementedException();
+            return this.context.SaveChanges();
         }
 
         public IEnumerable<MyCar> getMyCarList()
@@ -41,6 +41,50 @@ namespace BusinessLayer
             return this.MyCars.GetById(id);
         }
 
+        public bool isCarExist(int id)
+        {
+            return this.context.MyCars.Any(e => e.Id == id);
+ //           return this.MyCars.isExist(id);
+        }
+        public void UpdateCar(MyCar mycar)
+        {
+            this.context.Update<MyCar>(mycar);
+        }
+
+        public IEnumerable<MyCarDrivetrain> Drivetrains {
+            get
+            {
+                return this.context.MyCarDrivetrains;
+            }
+        }
+        public IEnumerable<MyCarModel> CarModels
+        {
+            get
+            {
+                return this.context.MyCarModels;
+            }
+        }
+        public IEnumerable<MyCarFuel> CarFuels
+        {
+            get
+            {
+                return this.context.MyCarFuels;
+            }
+        }
+        public IEnumerable<MyCarTransmission> CarTransmissions
+        {
+            get
+            {
+                return this.context.MyCarTransmissions;
+            }
+        }
+
+        public IEnumerable<MyAccount> MyAccounts {
+            get
+            {
+                return this.context.MyAccounts;
+            }
+        }
 
     }
 }

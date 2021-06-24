@@ -82,8 +82,8 @@ C:\Abel\GitHub\MyCarHub\DBSchema\DBSchema\bin\System.Net.Http.Formatting.xml
 C:\Abel\GitHub\MyCarHub\DBSchema\DBSchema\bin\System.Web.Http.xml
 C:\Abel\GitHub\MyCarHub\DBSchema\DBSchema\bin\System.Web.Http.WebHost.xml
 C:\Abel\GitHub\MyCarHub\DBSchema\DBSchema\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Abel\GitHub\MyCarHub\DBSchema\DBSchema\obj\Debug\DBSchema.csprojAssemblyReference.cache
 C:\Abel\GitHub\MyCarHub\DBSchema\DBSchema\obj\Debug\DBSchema.csproj.CoreCompileInputs.cache
 C:\Abel\GitHub\MyCarHub\DBSchema\DBSchema\obj\Debug\DBSchema.csproj.CopyComplete
 C:\Abel\GitHub\MyCarHub\DBSchema\DBSchema\obj\Debug\DBSchema.dll
 C:\Abel\GitHub\MyCarHub\DBSchema\DBSchema\obj\Debug\DBSchema.pdb
+C:\Abel\GitHub\MyCarHub\DBSchema\DBSchema\obj\Debug\DBSchema.csprojAssemblyReference.cache

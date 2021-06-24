@@ -51,5 +51,10 @@ namespace Mock.DataLayer
         {
             throw new NotImplementedException();
         }
+
+        public void Update(MyCar entity)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
