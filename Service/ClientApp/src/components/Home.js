@@ -6,12 +6,14 @@ export class Home extends Component {
   render () {
     return (
       <div>
-        <h1>Hello, world!</h1>
-        <p>Welcome to your new single-page application, built with:</p>
+        <h1>Welcom to CarCare Application!</h1>
+        <p>Manage your vehicle maintenance and expenses in cloud</p>
         <ul>
-          <li><a href='https://get.asp.net/'>ASP.NET Core</a> and <a href='https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx'>C#</a> for cross-platform server-side code</li>
-          <li><a href='https://facebook.github.io/react/'>React</a> for client-side code</li>
-          <li><a href='http://getbootstrap.com/'>Bootstrap</a> for layout and styling</li>
+          <li><a href='https://get.asp.net/'>Register an account</a></li>
+          <li><a href='/Admin/'>Login as ADMIN</a></li>
+          <li><a href='/garage/'>Login as Garage in-charge</a></li>
+          <li><a href='/fleet/'>Login as Fleet in-charge</a></li>
+          <li><a href='/driver/'>Login as Driver</a></li>
         </ul>
         <p>To help you get started, we have also set up:</p>
         <ul>

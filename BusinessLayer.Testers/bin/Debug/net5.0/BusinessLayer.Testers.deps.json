@@ -1688,8 +1688,7 @@
       "xunit.runner.visualstudio/2.4.3": {},
       "BusinessLayer/1.0.0": {
         "dependencies": {
-          "DataLayer.EFCore": "1.0.0",
-          "Domain": "1.0.0"
+          "DataLayer.EFCore": "1.0.0"
         },
         "runtime": {
           "BusinessLayer.dll": {}

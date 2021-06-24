@@ -113,9 +113,6 @@
             "projectReferences": {
               "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.EFCore\\DataLayer.EFCore.csproj": {
                 "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.EFCore\\DataLayer.EFCore.csproj"
-              },
-              "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj"
               }
             }
           }

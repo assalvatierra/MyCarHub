@@ -5752,8 +5752,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "DataLayer.EFCore >= 1.0.0",
-      "Domain >= 1.0.0"
+      "DataLayer.EFCore >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5785,9 +5784,6 @@
           "projectReferences": {
             "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.EFCore\\DataLayer.EFCore.csproj": {
               "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.EFCore\\DataLayer.EFCore.csproj"
-            },
-            "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj"
             }
           }
         }
