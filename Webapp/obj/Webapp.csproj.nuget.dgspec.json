@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
         "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\abel\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
         "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -68,11 +68,11 @@
         "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.DBContext\\DataLayer.DBContext.csproj",
         "projectName": "DataLayer.DBContext",
         "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.DBContext\\DataLayer.DBContext.csproj",
-        "packagesPath": "C:\\Users\\abel\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
         "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.DBContext\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -122,7 +122,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -132,11 +132,11 @@
         "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.EFCore\\DataLayer.EFCore.csproj",
         "projectName": "DataLayer.EFCore",
         "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.EFCore\\DataLayer.EFCore.csproj",
-        "packagesPath": "C:\\Users\\abel\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
         "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.EFCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -193,7 +193,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -203,11 +203,11 @@
         "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj",
         "projectName": "Domain",
         "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\abel\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
         "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -247,7 +247,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -257,11 +257,11 @@
         "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\Webapp\\Webapp.csproj",
         "projectName": "Webapp",
         "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\Webapp\\Webapp.csproj",
-        "packagesPath": "C:\\Users\\abel\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
         "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\Webapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -340,7 +340,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

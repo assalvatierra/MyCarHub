@@ -5756,7 +5756,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\abel\\.nuget\\packages\\": {}
+    "C:\\Users\\Hp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -5764,11 +5764,11 @@
       "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
       "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer\\BusinessLayer.csproj",
-      "packagesPath": "C:\\Users\\abel\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
       "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5812,7 +5812,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

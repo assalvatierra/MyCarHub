@@ -15,10 +15,12 @@ namespace Webapp.Pages
             this.serverinfo = "Development";
         }
 
-        public IActionResult OnPost()
+        public IActionResult OnPost(string login, string password)
         {
-            string login = this.Request.Form["login"].ToString();
-            string spwd = this.Request.Form["password"].ToString();
+            string _login = login; // this.Request.Form["login"].ToString();
+            string _spwd = password; // this.Request.Form["password"].ToString();
+
+
 
             return RedirectToPage("/");
         }
