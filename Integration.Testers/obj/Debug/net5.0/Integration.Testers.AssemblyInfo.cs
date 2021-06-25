@@ -11,11 +11,6 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("BusinessLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Abel\\GitHub\\MyCarHub\\BusinessLayer", "BusinessLayer.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("DataLayer.DBContext, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.DBContext", "DataLayer.DBContext.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("DataLayer.EFCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Abel\\GitHub\\MyCarHub\\DataLayer.EFCore", "DataLayer.EFCore.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Abel\\GitHub\\MyCarHub\\Domain", "Domain.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\Abel\\GitHub\\MyCarHub\\Service", "Service.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Integration.Testers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

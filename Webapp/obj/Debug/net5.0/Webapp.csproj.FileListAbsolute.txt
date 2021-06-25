@@ -157,3 +157,5 @@ C:\Abel\GitHub\MyCarHub\Webapp\obj\Debug\net5.0\Webapp.dll
 C:\Abel\GitHub\MyCarHub\Webapp\obj\Debug\net5.0\ref\Webapp.dll
 C:\Abel\GitHub\MyCarHub\Webapp\obj\Debug\net5.0\Webapp.pdb
 C:\Abel\GitHub\MyCarHub\Webapp\obj\Debug\net5.0\Webapp.genruntimeconfig.cache
+C:\Abel\GitHub\MyCarHub\Webapp\obj\Debug\net5.0\Razor\Pages\Register.cshtml.g.cs
+C:\Abel\GitHub\MyCarHub\Webapp\obj\Debug\net5.0\Razor\Pages\Login.cshtml.g.cs
