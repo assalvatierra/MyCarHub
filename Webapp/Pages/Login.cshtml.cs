@@ -9,20 +9,24 @@ namespace Webapp.Pages
 {
     public class LoginModel : PageModel
     {
-        public string serverinfo;
+        [BindProperty]
+        public string serverinfo { get; set; }
+
+        [BindProperty] public string login { get; set; }
+        [BindProperty] public string password { get; set; }
         public void OnGet()
         {
             this.serverinfo = "Development";
         }
 
-        public IActionResult OnPost(string login, string password)
+        public void OnPost()
         {
             string _login = login; // this.Request.Form["login"].ToString();
             string _spwd = password; // this.Request.Form["password"].ToString();
 
+            ViewData["status"] = "Login:" + _login + " -request is being processed.";
 
-
-            return RedirectToPage("/");
+            //return RedirectToPage("/");
         }
     }
 }
