@@ -173,3 +173,7 @@ C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\Vehicle\Delete.cs
 C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\Vehicle\Details.cshtml.g.cs
 C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\Vehicle\Edit.cshtml.g.cs
 C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\Vehicle\Index.cshtml.g.cs
+C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs

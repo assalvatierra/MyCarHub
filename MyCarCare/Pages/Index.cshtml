@@ -1,5 +1,6 @@
 ﻿@page
 @model IndexModel
+
 @{
     ViewData["Title"] = "Home page";
 }
@@ -8,3 +9,12 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+@if (User.Identity.IsAuthenticated)
+{
+<div>
+    <p><a href="/Vehicle">Vehicle List</a></p>
+    <p><a href="/Garage">Garage List</a></p>
+
+</div>
+}
