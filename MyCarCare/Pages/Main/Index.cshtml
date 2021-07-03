@@ -1,0 +1,24 @@
+﻿@page
+@model MyCarCare.Pages.Main.IndexModel
+@{
+}
+
+
+<div>
+    <h1> Options for user </h1>
+
+    @if (User.Identity.IsAuthenticated)
+    {
+    <div>
+        <p><a href="">Account Settings</a></p>
+        <p><a href="/Main/Login">Login List</a></p>
+        <p><a href="/Main/Vehicle">Vehicles</a></p>
+        <p><a href="/Main/Garage">Garage</a></p>
+        <p><a href="/Main/Driver">Drivers</a></p>
+        <p><a href="/Main/Reports">Reports</a></p>
+
+    </div>
+    }
+
+
+</div>

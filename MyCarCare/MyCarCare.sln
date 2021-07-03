@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCarCare", "MyCarCare.csproj", "{24F9EC74-8FFD-4A62-AA8A-A6600870B71A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCarCare", "MyCarCare.csproj", "{24F9EC74-8FFD-4A62-AA8A-A6600870B71A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBSchema", "..\DBSchema\DBSchema\DBSchema.csproj", "{B11299B8-DBCC-4B49-A84E-3035A6AF6873}"
 EndProject

@@ -22,4 +22,9 @@
     <ProjectReference Include="..\Domain\Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\Main\Account\" />
+    <Folder Include="Pages\Main\Reports\" />
+  </ItemGroup>
+
 </Project>
