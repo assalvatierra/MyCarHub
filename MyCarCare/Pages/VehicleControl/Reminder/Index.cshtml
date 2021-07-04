@@ -1,0 +1,78 @@
+﻿@page
+@model MyCarCare.Pages.VehicleControl.Reminder.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MyCarReminder[0].DtEntered)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyCarReminder[0].Message)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyCarReminder[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyCarReminder[0].DtRemind)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyCarReminder[0].Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyCarReminder[0].SendNotification)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyCarReminder[0].MyCar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyCarReminder[0].MyReminderType)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.MyCarReminder) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DtEntered)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DtRemind)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SendNotification)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MyCar.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MyReminderType.Id)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

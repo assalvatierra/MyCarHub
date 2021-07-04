@@ -1,0 +1,26 @@
+﻿@page
+@model MyCarCare.Pages.DriverControl.IndexModel
+@{
+}
+
+<div>
+    <h1>Driver's Panel</h1>
+
+    <div>
+        <p>Information:</p>
+        <p>Latest and important movements</p>
+    </div>
+
+    <h3>Options</h3>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div>
+            <p><a href="/Garage/Movement">Movement List</a></p>
+            <p><a href="/Garage/Movement/Create">Add Movement</a></p>
+            <p><a href="/Garage/Movement/Create">Add Reminder</a></p>
+
+        </div>
+    }
+
+
+</div>

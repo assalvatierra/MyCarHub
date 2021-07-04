@@ -1,0 +1,60 @@
+﻿@page
+@model MyCarCare.Pages.Transactions.PartialView.IndexModel
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MyCarTrx[0].MyCarTrxTypeId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyCarTrx[0].TrxDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyCarTrx[0].TrxTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyCarTrx[0].TrxMileage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyCarTrx[0].EnteredBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MyCarTrx[0].MyCar)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.MyCarTrx) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MyCarTrxTypeId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrxDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrxTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TrxMileage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnteredBy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MyCar.Id)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,70 @@
+﻿@page
+@model MyCarCare.Pages.VehicleControl.Reminder.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>MyCarReminder</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MyCarReminder.Id" />
+            <div class="form-group">
+                <label asp-for="MyCarReminder.MyCarId" class="control-label"></label>
+                <select asp-for="MyCarReminder.MyCarId" class="form-control" asp-items="ViewBag.MyCarId"></select>
+                <span asp-validation-for="MyCarReminder.MyCarId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyCarReminder.DtEntered" class="control-label"></label>
+                <input asp-for="MyCarReminder.DtEntered" class="form-control" />
+                <span asp-validation-for="MyCarReminder.DtEntered" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyCarReminder.Message" class="control-label"></label>
+                <input asp-for="MyCarReminder.Message" class="form-control" />
+                <span asp-validation-for="MyCarReminder.Message" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyCarReminder.Title" class="control-label"></label>
+                <input asp-for="MyCarReminder.Title" class="form-control" />
+                <span asp-validation-for="MyCarReminder.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyCarReminder.DtRemind" class="control-label"></label>
+                <input asp-for="MyCarReminder.DtRemind" class="form-control" />
+                <span asp-validation-for="MyCarReminder.DtRemind" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyCarReminder.Status" class="control-label"></label>
+                <input asp-for="MyCarReminder.Status" class="form-control" />
+                <span asp-validation-for="MyCarReminder.Status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyCarReminder.MyReminderTypeId" class="control-label"></label>
+                <select asp-for="MyCarReminder.MyReminderTypeId" class="form-control" asp-items="ViewBag.MyReminderTypeId"></select>
+                <span asp-validation-for="MyCarReminder.MyReminderTypeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyCarReminder.SendNotification" class="control-label"></label>
+                <input asp-for="MyCarReminder.SendNotification" class="form-control" />
+                <span asp-validation-for="MyCarReminder.SendNotification" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

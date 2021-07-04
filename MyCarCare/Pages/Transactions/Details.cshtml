@@ -1,0 +1,55 @@
+﻿@page
+@model MyCarCare.Pages.Transactions.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>MyCarTrx</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MyCarTrx.MyCarTrxTypeId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MyCarTrx.MyCarTrxTypeId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MyCarTrx.TrxDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MyCarTrx.TrxDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MyCarTrx.TrxTime)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MyCarTrx.TrxTime)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MyCarTrx.TrxMileage)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MyCarTrx.TrxMileage)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MyCarTrx.EnteredBy)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MyCarTrx.EnteredBy)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MyCarTrx.MyCar)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MyCarTrx.MyCar.Id)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.MyCarTrx.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
