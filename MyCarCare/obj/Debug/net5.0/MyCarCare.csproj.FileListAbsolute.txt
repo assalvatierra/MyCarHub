@@ -211,8 +211,13 @@ C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\VehicleControl\Re
 C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\VehicleControl\Reminder\Details.cshtml.g.cs
 C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\VehicleControl\Reminder\Edit.cshtml.g.cs
 C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\VehicleControl\Reminder\Index.cshtml.g.cs
-C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\Transactions\PartialView\Create.cshtml.g.cs
 C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\Transactions\PartialView\Delete.cshtml.g.cs
 C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\Transactions\PartialView\Details.cshtml.g.cs
 C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\Transactions\PartialView\Edit.cshtml.g.cs
 C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\Transactions\PartialView\Index.cshtml.g.cs
+C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\Transactions\Fuel\Create.cshtml.g.cs
+C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\Transactions\Fuel\Delete.cshtml.g.cs
+C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\Transactions\Fuel\Details.cshtml.g.cs
+C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\Transactions\Fuel\Edit.cshtml.g.cs
+C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\Transactions\Fuel\Index.cshtml.g.cs
+C:\Abel\GitHub\MyCarHub\MyCarCare\obj\Debug\net5.0\Razor\Pages\Transactions\PartialView\_TrxCreate.cshtml.g.cs

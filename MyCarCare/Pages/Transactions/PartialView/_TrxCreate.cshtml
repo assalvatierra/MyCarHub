@@ -1,0 +1,48 @@
+﻿
+@model Domain.Entities.MyCarTrx
+
+<h4>MyCarTrx</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MyCarTrxTypeId" class="control-label"></label>
+                <input asp-for="MyCarTrxTypeId" class="form-control" />
+                <span asp-validation-for="MyCarTrxTypeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyCarId" class="control-label"></label>
+                <select asp-for="MyCarId" class ="form-control" asp-items="ViewBag.MyCarId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrxDate" class="control-label"></label>
+                <input asp-for="TrxDate" class="form-control" />
+                <span asp-validation-for="TrxDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrxTime" class="control-label"></label>
+                <input asp-for="TrxTime" class="form-control" />
+                <span asp-validation-for="TrxTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrxMileage" class="control-label"></label>
+                <input asp-for="TrxMileage" class="form-control" />
+                <span asp-validation-for="TrxMileage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EnteredBy" class="control-label"></label>
+                <input asp-for="EnteredBy" class="form-control" />
+                <span asp-validation-for="EnteredBy" class="text-danger"></span>
+            </div>
+            
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
