@@ -6,6 +6,10 @@ using Microsoft.AspNetCore.Hosting;
 using System.Net.Http;
 using Microsoft.Extensions.Configuration;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using DataLayer;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace MyCarCare.Tests.Integration
 {
@@ -94,6 +98,29 @@ namespace MyCarCare.Tests.Integration
             var result = await this.client.GetAsync("/Transactions/Fuel/Create");
             var resultstring = await result.Content.ReadAsStringAsync();
             Assert.Contains("MyCarFuel", resultstring);
+
+        }
+
+
+        [Fact]
+        public async Task OnPost_CreateFuelTrx_WhenFuelDetailsValid()
+        {
+            //        var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>()
+            //.UseInMemoryDatabase("InMemoryDb");
+
+            string connectionstring = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Hp\\CarCareDB_test.mdf;Integrated Security=True;Connect Timeout=30";
+                //"Server=(localdb)\\mssqllocaldb;Database=CarCareDB_test;Trusted_Connection=True;";                        
+            var optionsBuilder = new DbContextOptionsBuilder<MyCarDBContext>()
+    .UseSqlServer(connectionstring);
+
+            using var db = new MyCarDBContext(optionsBuilder.Options);
+
+            MyCarCare.Pages.Transactions.Fuel.CreateModel pagemodel = new MyCarCare.Pages.Transactions.Fuel.CreateModel(db);
+            pagemodel.MyCarFuel = new Domain.Entities.MyCarFuel() { Id = 0, Fuel = "TEST" };
+            pagemodel.cartrx = new Domain.Entities.MyCarTrx() { Id = 0, EnteredBy = "ABEL-TEST", TrxDate = "today", TrxMileage = "!00" };
+
+            IActionResult response = await pagemodel.OnPostAsync();
+            Assert.Contains("success", response.ToString() );
 
         }
     }
