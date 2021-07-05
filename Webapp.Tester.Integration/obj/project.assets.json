@@ -10408,7 +10408,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hp\\.nuget\\packages\\": {}
+    "C:\\Users\\abel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -10416,11 +10416,11 @@
       "projectUniqueName": "C:\\Abel\\GitHub\\MyCarHub\\Webapp.Tester.Integration\\Webapp.Tester.Integration.csproj",
       "projectName": "Webapp.Tester.Integration",
       "projectPath": "C:\\Abel\\GitHub\\MyCarHub\\Webapp.Tester.Integration\\Webapp.Tester.Integration.csproj",
-      "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\abel\\.nuget\\packages\\",
       "outputPath": "C:\\Abel\\GitHub\\MyCarHub\\Webapp.Tester.Integration\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10494,7 +10494,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
